@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>H 4 P P Y </title>
+    <link rel="shortcut icon" type="image/x-icon" href="ico.png" />
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="main.js"></script>
+    <script src="jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/star-animation.css">
+    <div class="bg-animation">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="stars4"></div>
+    </div>
+    <script language="JavaScript">
+        (function titleScroller(text) {
+            document.title = text;
+            console.log(text);
+            setTimeout(function() {
+                titleScroller(text.substr(1) + text.substr(0, 1));
+            }, 300);
+        }(" H4PPY "));
+
+    </script>
+
+</head>
+
+<body oncontextmenu="return false;" onload="writetext(); setTimeout(meme, 1200);">
+<div class="cssload-container">
+    
+</div>
+    <div class="outer">
+        <div class="middle">
+            <div class="center">
+                <div id="nothing" style="align-items: center; align-content: center; justify-content: center; flex-direction: column; display: flex;">
+                </div>
+                <marquee width="30%" class="japanese2" behavior=scroll direction="left" scrollamount="3" id="marq">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i><a href="https://steamcommunity.com/id/bullettracer/" target="_blank">steam</a>&nbsp;  / &nbsp;<a href="https://auslander.one" target="_blank">team</a>&nbsp; / &nbsp;<a href="https://www.youtube.com/H4PPYCS" target="_blank">youtube</a>&nbsp; / &nbsp;<a href="https://selly.gg/@H4PPY9999" target="_blank">selly</a>&nbsp; / &nbsp;<a href="https://discord.gg/ZtSp5gB" target="_blank">discord</a></i>
+                </marquee><br>
+                <div id="steam" style="align-items: center; align-content: center; justify-content: center; flex-direction: column; display: flex;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <video style=" background-color:black;" autoplay loop id="player" controls>
+            <source src="media/video.mp4" type="video/mp4">
+
+    
+    
+            </video>
+    <script>
+        var vid = document.getElementById("player");
+        vid.volume = .5;
+
+    </script>
+</body>
+<script>
+    $(document).ready(function() {
+        $(window).load(function() {
+            preloaderFadeOutTime = 1500;
+
+            function hidePreloader() {
+                var preloader = $('.cssload-container');
+                preloader.fadeOut(preloaderFadeOutTime);
+
+            }
+            hidePreloader();
+        });
+    });
+
+</script>
+</html>
